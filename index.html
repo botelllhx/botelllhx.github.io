@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/imagens/icone.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Botas®️</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/imagens/logo_topo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><b>Vestuário</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><b>Drop</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><b>Contato</b></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="/imagens/painel_2.jpg" width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Drop Botas®️</h1>
+            <p>O máximo de personalidade nas peças.</p>
+            <p><a class="btn btn-lg btn-light" href="#">Clique e confira</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="/imagens/painel_1.jpg" width="100%">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Drop Botas®️</h1>
+            <p>Quanto mais streetwear melhor.</p>
+            <p><a class="btn btn-lg btn-light" href="#">Clique e confira</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="/imagens/painel_3.jpg" width="100%">
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Drop Botas®️</h1>
+            <p>Sinta se livre ao vestir.</p>
+            <p><a class="btn btn-lg btn-light" href="#">Clique e confira</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+ 
+
+  <div class="container marketing">
+
+    
+    <div class="row">
+      <div class="col-lg-4">
+          <img src="/imagens/camiseta.jpg" class="rounded-circle" width="140" height="140">
+        <h2 class="fw-normal"><b>Camisetas</b></h2>
+        <p>Encontre camisetas disponíveis para qualquer vibe, sendo básicas ou mais chamativas.</p>
+        <p><a class="btn btn-outline-light" href="#">Clique e confira! &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img src="/imagens/moletom.jpg" class="rounded-circle" width="140" height="140">
+        <h2 class="fw-normal"><b>Moletons</b></h2>
+        <p>Em dúvida na hora de escolher um moletom que esbanje conforto e estilo e que adeque ao seu estilo único?</p>
+        <p><a class="btn btn-outline-light" href="#">Clique e confira! &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+          <img src="/imagens/calcas.jpg" class="rounded-circle" width="140" height="140">
+        <h2 class="fw-normal"><b>Calças</b></h2>
+        <p>A Calça Street da Botas®️ veio para ser a principal peça do seu guarda-roupas! Com um corte diferenciado ela simplesmente leva o que chamamos de estilo a OUTRO nivel!</p>
+        <p><a class="btn btn-outline-light" href="#">Clique e confira! &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">O streetwear nunca <span class="text-muted">esteve tão</span><b> vivo.</b></h2>
+        <p class="lead">Uma empresa que faz o seu nome a cada dia no ramo do streetwear e é uma das favoritas dessa subcultura é a Botas®️. 
+          Basta digitar “Botas” na ferramenta de pesquisa que você vai saber porque ela é aclamada. Com estilos despojados e urbanos, 
+          as peças dessa marca conquistam, a cada dia, mais pessoas da cultura skatista.</p>
+      </div>
+      <div class="col-md-5">
+          <img src="/imagens/foto_2.jpg" width="500px" height="500px">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Mais qualidade e conforto do que <span class="text-muted">qualquer outro lugar.</span></h2>
+        <p class="lead">As peças de vestuário da Botas transmitem essa energia livre no design, sem abrir mão da qualidade empregada na produção de cada item. 
+          Por isso, a Botas oferece uma linha de roupas que inclui camisetas, meias, shorts, moletons, bonés e muito mais.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+          <img src="/imagens/foto_3.png" width="500px" height="500px">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Não é somente uma <span class="text-muted">peça.</span></h2>
+        <p class="lead">É por isso que, se é adepto ao lifestyle, você não pode deixar de conhecer mais a fundo sobre a história dessa marca revolucionária. E, caso já conheça um pouco, 
+          fique à vontade para aprender sobre o porquê ela deve fazer parte do seu guarda-roupa. Bora lá!</p>
+      </div>
+      <div class="col-md-5">
+          <img src="/imagens/foto_1.jpg" width="500px" height="500px">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    
+
+  </div>
+
+
+  
+  <footer class="container">
+    <p class="float-end"><a style="color:#FFF" href="#">Voltar ao topo</a></p>
+    <p>&copy; 2021–2022 Botas®️ Company, Inc. &middot; <a style="color:#FFF" href="#">Privacy</a> &middot; <a style="color:#FFF" href="#">Terms</a></p>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a title="Acesse nosso whatsapp!" href="https://wa.me/5531993884747" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#000000;color:#FFF;border-radius:50px;text-align:center;font-size:30px;z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+    <a title="Confira nosso facebook!" href="#"><i class="fa-brands fa-facebook fa-2x" style="color:#FFF"></i></a>
+    <a title="Confira nosso twitter!" href="#"><i class="fa-brands fa-twitter fa-2x" style="color:#FFF"></i></a>
+    <a title="Confira nosso instagram!" href="#"><i class="fa-brands fa-instagram fa-2x" style="color:#FFF"></i></a>
+    <a title="Confira nosso youtube!" href="#"><i class="fa-brands fa-youtube fa-2x" style="color:#FFF"></i></a>
+  </footer>
+</main>
+
+    <script src="https://kit.fontawesome.com/411b2b1fb7.js" crossorigin="anonymous"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
